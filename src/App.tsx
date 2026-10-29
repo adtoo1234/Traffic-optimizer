@@ -567,7 +567,11 @@ export default function App() {
   return (
     <APIProvider
       apiKey={GOOGLE_MAPS_API_KEY}
-      libraries={['places', 'routes', 'marker', 'geometry', 'maps', 'core']}
+      libraries={['places', 'marker', 'geometry']}
+      onError={(err) => {
+        console.error('Failed to load Google Maps Platform SDK:', err);
+        setIsQuotaExceeded(true);
+      }}
     >
       <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
         {/* Tier 1 Quota Banner if limit reached */}
