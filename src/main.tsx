@@ -21,3 +21,4 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </ErrorBoundary>
 );
+(window as any).__REACT_APP_MOUNTED__ = true;
