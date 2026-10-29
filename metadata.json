@@ -1,0 +1,10 @@
+{
+  "name": "Traffic Optimizer",
+  "description": "Interactive worldwide GPS locator and distance comparison engine powered by Google Maps Platform.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
